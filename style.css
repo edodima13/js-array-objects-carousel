@@ -1,0 +1,87 @@
+body{
+    display: flex;
+    justify-content: center;
+    padding-top: 50vh;
+    transform: translateY(-25%);
+}
+
+#primocontainer{
+    max-width: 500px;
+    position: relative;
+}
+
+#primocontainer img{
+    top: 0;
+    height: 250px;
+}
+
+img{
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    width: 100%;
+}
+
+#up{
+    position: absolute;
+    left: 33%;
+}
+
+.absolute{
+    position: absolute;
+}
+
+h3,p{
+    margin: 0;
+}
+
+#down{
+    position: absolute;
+    bottom: 0;
+    left: 33%;
+}
+
+#carousel div{
+    opacity: 0.2;
+} 
+
+#primocontainer .not-active{
+    display: none;
+}
+
+#primocontainer .active{
+    display: block;
+}
+
+#primocontainer img{
+    position: relative;
+}
+
+#primocontainer div div{
+    font-size: 11px;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right : 10px;
+    left : 10px
+}
+
+h3{
+    margin-left: 87% ;
+}
+
+
+
+#primocontainer{
+    max-height: 250px;
+}
+
+body #carousel{
+    max-width: 100px;
+    position: relative;
+}
+
+body #carousel img{
+    height: 48px;
+    border: 1px solid green;  
+}
