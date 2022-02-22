@@ -39,9 +39,12 @@ const card = [
     let currentIndex
 
 
-for ( let i=0; i < items.length ; i++){
+for ( let i=0; i < card.length ; i++){
+
+    const {title, text, items} = card[i]
+
     const nuovaImgNuovoDiv = document.createElement("img")
-    nuovaImgNuovoDiv.src = items[i]
+    nuovaImgNuovoDiv.src = items
     const nuovoDiv = document.createElement("div")
     nuovoDiv.classList.add("not-active")
     containerLeft.append(nuovoDiv)
@@ -53,9 +56,9 @@ for ( let i=0; i < items.length ; i++){
     }
 
     const titolo = document.createElement("h3")
-    titolo.append(title[i])
+    titolo.append(title)
     const testo = document.createElement("p")
-    testo.append(text[i])
+    testo.append(text)
     const divText = document.createElement("div");
     divText.append(titolo)
     divText.append(testo)
@@ -66,8 +69,8 @@ for ( let i=0; i < items.length ; i++){
     containerRight.append(div)
 
     const nuovaImg = document.createElement('img');
-    nuovaImg.src = items[i];
-    nuovaImg.append(title[i])
+    nuovaImg.src = items;
+    nuovaImg.append(title)
     div.append(nuovaImg);   
 }
 
